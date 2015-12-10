@@ -95,7 +95,7 @@ The FileNotifier is automatic watching.
 
 MySQL or MSSQL ? No problem.
 
-``java
+```java
 public class MSSQLSample extends MSSQLNotifier {
 		private int counter = 0;
 		
@@ -115,7 +115,7 @@ public class MSSQLSample extends MSSQLNotifier {
 	}
 ```
 
-``java
+```java
 public class MySQLSample extends MySQLNotifier {
 		private int counter = 0;
 		
