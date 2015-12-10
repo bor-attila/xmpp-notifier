@@ -45,7 +45,7 @@ The second option is deliver directly to a JID by an external component (Openfir
 This option doesn't need special settings, but you must create a shared secret in openfire admin.
 
 Let's do this. Extend the Abstract Notifier.
-============================================
+--------------------------------------------
 
 ```java
 	public class Sample extends AbstractNotifier {
