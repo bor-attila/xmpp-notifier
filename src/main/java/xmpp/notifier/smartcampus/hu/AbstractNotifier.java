@@ -64,7 +64,7 @@ public abstract class AbstractNotifier implements INotifier  {
 	/**
 	 * The main loop declared in @run method will loop in every <i>interval</i> second.
 	 */
-	private int interval = 5000;
+	protected int interval = 5000;
 				
 	/**
 	 * Implementation of the ComponentManager interface for external components. This implementation follows JEP-0014.
