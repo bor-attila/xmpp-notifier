@@ -68,6 +68,7 @@ public abstract class MySQLNotifier extends AbstractNotifier {
 			ResultSet rs = ps.executeQuery();
 			if(rs.next()){
 				long scn = Long.parseLong(rs.getString(1));
+				System.out.println(scn);
 				if( lastState != scn ){
 					lastState = scn;
 					changed = true;

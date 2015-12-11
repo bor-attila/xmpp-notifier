@@ -181,7 +181,7 @@ public abstract class AbstractNotifier implements INotifier  {
 	 * 
 	 * @return
 	 */
-	final protected boolean isAlive(){
+	final public boolean isAlive(){
 		return this.thread.isAlive();
 	}
 	
