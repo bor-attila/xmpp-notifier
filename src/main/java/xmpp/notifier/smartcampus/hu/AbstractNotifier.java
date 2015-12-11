@@ -220,7 +220,7 @@ public abstract class AbstractNotifier implements INotifier  {
 				msg.setFrom(this.getName());
 
 			msg.setBody();
-			
+			new SimplePayload("book", "pubsub:test:book", "Two Towers");
 			log.trace("Sending notice {}",msg.toXML());
 			
 			ecm.sendPacket(this, msg);

@@ -17,6 +17,8 @@ package dbn.xmpp.notifier.smartcampus.hu;
 
 import java.io.File;
 
+import org.jivesoftware.smackx.pubsub.LeafNode;
+
 import xmpp.notifier.smartcampus.hu.AbstractNotifier;
 
 public abstract class FileNotifier extends AbstractNotifier {
@@ -24,6 +26,12 @@ public abstract class FileNotifier extends AbstractNotifier {
 	private File file = null;
 	
 	private long lastModified = 0;
+	
+	public FileNotifier(LeafNode to, String absolutePath) {
+		super(to);
+		this.file = new File(absolutePath);
+		lastModified = this.file.lastModified();
+	}
 	
 	public FileNotifier(String host, String subdomain, String secretkey,String absolutePath) {
 		super(host, subdomain, secretkey);
